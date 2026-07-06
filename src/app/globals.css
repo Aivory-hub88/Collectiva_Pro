@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F2F0E6;
+  --foreground: #5A3D1E;
 }
 
 @theme inline {
@@ -12,15 +12,27 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
+
+/* Grid lines overlay */
+.bg-grid-pattern {
+  background-size: 120px 120px;
+  background-position: top center;
+  background-image: 
+    linear-gradient(to right, rgba(90, 61, 30, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(90, 61, 30, 0.05) 1px, transparent 1px);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+

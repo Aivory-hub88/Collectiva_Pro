@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: collectiva-frontend
+    restart: unless-stopped
+    networks:
+      - aivory-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.collectivapro.rule=Host(`www.collectiva.pro`) || Host(`collectiva.pro`)"
+      - "traefik.http.routers.collectivapro.entrypoints=websecure"
+      - "traefik.http.routers.collectivapro.tls.certresolver=letsencrypt"
+      - "traefik.http.services.collectivapro.loadbalancer.server.port=3000"
+
+networks:
+  aivory-network:
+    external: true
