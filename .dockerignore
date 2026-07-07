@@ -1,0 +1,9 @@
+node_modules
+.git
+.next
+.gitignore
+README.md
+AGENTS.md
+CLAUDE.md
+*.py
+*.md

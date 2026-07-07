@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   frontend:
     build:
@@ -11,10 +9,26 @@ services:
       - aivory-network
     labels:
       - "traefik.enable=true"
+      # HTTPS router
       - "traefik.http.routers.collectivapro.rule=Host(`www.collectiva.pro`) || Host(`collectiva.pro`)"
       - "traefik.http.routers.collectivapro.entrypoints=websecure"
       - "traefik.http.routers.collectivapro.tls.certresolver=letsencrypt"
       - "traefik.http.services.collectivapro.loadbalancer.server.port=3000"
+      # Override the global aivory-secure middleware with Collectiva-specific headers
+      # This prevents the Aivory CSP from blocking Three.js Environment HDR downloads
+      - "traefik.http.routers.collectivapro.middlewares=collectiva-headers@docker"
+      - "traefik.http.middlewares.collectiva-headers.headers.stsSeconds=31536000"
+      - "traefik.http.middlewares.collectiva-headers.headers.stsIncludeSubdomains=true"
+      - "traefik.http.middlewares.collectiva-headers.headers.stsPreload=true"
+      - "traefik.http.middlewares.collectiva-headers.headers.forceSTSHeader=true"
+      - "traefik.http.middlewares.collectiva-headers.headers.frameDeny=true"
+      - "traefik.http.middlewares.collectiva-headers.headers.contentTypeNosniff=true"
+      - "traefik.http.middlewares.collectiva-headers.headers.browserXssFilter=true"
+      - "traefik.http.middlewares.collectiva-headers.headers.referrerPolicy=strict-origin-when-cross-origin"
+      - "traefik.http.middlewares.collectiva-headers.headers.permissionsPolicy=camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()"
+      - "traefik.http.middlewares.collectiva-headers.headers.contentSecurityPolicy=default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net blob:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https: wss:; worker-src 'self' blob:; frame-ancestors 'self'"
+      - "traefik.http.middlewares.collectiva-headers.headers.customResponseHeaders.Server="
+      - "traefik.http.middlewares.collectiva-headers.headers.customResponseHeaders.X-Powered-By="
 
 networks:
   aivory-network:

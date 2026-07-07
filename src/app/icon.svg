@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-22 -14 44 34">
+  <defs>
+    <linearGradient id="metal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#d4d4d4" />
+      <stop offset="45%" stop-color="#1a1a1a" />
+      <stop offset="55%" stop-color="#2a2a2a" />
+      <stop offset="100%" stop-color="#a0a0a0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <!-- Main Spade Body -->
+    <path
+      d="M 0,-12 
+         C 15,0 20,8 10,12 
+         C 5,14 0,8 0,8 
+         C 0,8 -5,14 -10,12 
+         C -20,8 -15,0 0,-12 Z"
+      fill="url(#metal)"
+    />
+    <!-- Stem -->
+    <path
+      d="M 0,8 L 4,18 L -4,18 Z"
+      fill="url(#metal)"
+    />
+  </g>
+</svg>
