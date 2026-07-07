@@ -156,63 +156,63 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-4 md:p-8 max-w-6xl mx-auto">
           {/* Bento boxes for clients with extracted PDF thumbnails */}
           
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/heinz.jpg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/heinz.jpg')" }}>
             <div className="absolute inset-0 bg-[#000000]/60 group-hover:bg-[#000000]/20 transition-colors duration-500" />
             <img src="/images/heinz_2026_logo.svg" alt="Heinz" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg filter invert brightness-0" />
           </div>
 
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/coca-cola.jpg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/coca-cola.jpg')" }}>
             <div className="absolute inset-0 bg-[#000000]/60 group-hover:bg-[#000000]/20 transition-colors duration-500" />
             <img src="/images/logo-coca-cola.svg" alt="Coca-Cola" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg filter invert brightness-0" />
           </div>
           
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/expo.jpg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/expo.jpg')" }}>
             <div className="absolute inset-0 bg-[#000000]/60 group-hover:bg-[#000000]/20 transition-colors duration-500" />
             <img src="/images/logo-expo.png" alt="Expo City Dubai" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg filter invert brightness-0" />
           </div>
 
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/roast-bake.jpg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/roast-bake.jpg')" }}>
             <div className="absolute inset-0 bg-[#7B519C]/70 group-hover:bg-[#7B519C]/30 transition-colors duration-500" />
             <img src="/images/roast_bake.svg" alt="Roast & Bake" className="relative z-10 max-w-[80%] max-h-32 object-contain drop-shadow-lg" />
           </div>
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/fiat-bg.jpeg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/fiat-bg.jpeg')" }}>
             <div className="absolute inset-0 bg-[#000000]/40 group-hover:bg-[#000000]/10 transition-colors duration-500" />
             <img src="/images/fiat.svg" alt="Fiat" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg filter invert brightness-0" />
           </div>
 
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/farmers-market-bg.jpeg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/farmers-market-bg.jpeg')" }}>
             <div className="absolute inset-0 bg-[#000000]/40 group-hover:bg-[#000000]/10 transition-colors duration-500" />
             <img src="/images/farmers-market-99.svg" alt="Farmers Market" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg filter invert brightness-0" />
           </div>
           
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/Four_football_players_action_pose_202607072215.jpeg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/Four_football_players_action_pose_202607072215.jpeg')" }}>
             <div className="absolute inset-0 bg-[#000000]/40 group-hover:bg-[#000000]/20 transition-colors duration-500" />
             <img src="/images/logo-fifae.png" alt="FIFAe" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg" />
           </div>
           
 
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/Nike_Zoom_Fly.jpeg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/Nike_Zoom_Fly.jpeg')" }}>
             <div className="absolute inset-0 bg-[#000000]/40 group-hover:bg-[#000000]/10 transition-colors duration-500" />
             <img src="/images/nike_Logo.svg" alt="Nike" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg filter invert brightness-0" />
           </div>
           
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/aivory-14.jpg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/aivory-14.jpg')" }}>
             <div className="absolute inset-0 bg-[#5700FF]/70 group-hover:bg-[#5700FF]/30 transition-colors duration-500" />
             <img src="/images/logo-aivory.png" alt="Aivory" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg" />
           </div>
           
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/Nuitree_sip_tastic_compressed.jpeg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/Nuitree_sip_tastic_compressed.jpeg')" }}>
             <div className="absolute inset-0 bg-[#000000]/60 group-hover:bg-[#000000]/20 transition-colors duration-500" />
             <img src="/images/logo-nuitree.png" alt="Nuitree" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg" />
           </div>
           
 
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/chip_happens_compressed.jpeg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/chip_happens_compressed.jpeg')" }}>
             <div className="absolute inset-0 bg-[#000000]/60 group-hover:bg-[#000000]/20 transition-colors duration-500" />
             <img src="/images/chip_happens.svg" alt="Chip Happens" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg filter invert brightness-0" />
           </div>
           
-          <div className="aspect-square rounded-lg p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/zensend-bag.jpeg')" }}>
+          <div className="aspect-square rounded-lg p-4 md:p-8 flex items-center justify-center text-white text-3xl font-bold hover:scale-95 transition-transform cursor-pointer shadow-xl relative overflow-hidden group bg-cover bg-center" style={{ backgroundImage: "url('/images/zensend-bag.jpeg')" }}>
             <div className="absolute inset-0 bg-[#000000]/50 group-hover:bg-[#000000]/20 transition-colors duration-500" />
             <img src="/images/ZenSendLogo_white.svg" alt="ZenSend" className="relative z-10 max-w-[80%] max-h-24 object-contain drop-shadow-lg" />
           </div>
@@ -235,7 +235,7 @@ export default function Home() {
             <ParallaxText offset={50} className="w-full md:w-auto">
               <div className="flex flex-col items-start gap-8">
                 <p className="text-lg md:text-xl max-w-md font-medium uppercase tracking-widest">Because growth starts when someone feels your brand belongs</p>
-                <img src="/images/Footer_micro_graphic.svg" alt="Footer Graphic" className="h-12 md:h-20 w-auto opacity-80 -ml-2 md:-ml-6 lg:-ml-8" />
+                <img src="/images/Footer_micro_graphic.svg" alt="Footer Graphic" className="h-12 md:h-20 w-auto object-contain shrink-0 opacity-80 -ml-2 md:-ml-6 lg:-ml-8" />
               </div>
             </ParallaxText>
             
